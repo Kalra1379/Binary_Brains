@@ -1,0 +1,116 @@
+<footer class="footer">
+
+    <div class="grid grid-four-coloumn">
+
+        <div class="footer-about">
+            <h3>About</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique magnam quod cumque maiores quae ex, eos dolorem laboriosam maxime exercitationem rerum, nam dignissimos architecto, vitae quia! Architecto excepturi officia eius.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Links</h3>
+            <li>
+                <ion-icon name="arrow-forward-outline"></ion-icon>Home
+            </li>
+            <li>
+                <ion-icon name="arrow-forward-outline"></ion-icon>About
+            </li>
+            <li>
+                <ion-icon name="arrow-forward-outline"></ion-icon>services
+            </li>
+            <li>
+                <ion-icon name="arrow-forward-outline"></ion-icon>contact
+            </li>
+            <li>
+                <ion-icon name="arrow-forward-outline"></ion-icon>Portfolio
+            </li>
+        </div>
+
+        <div class="footer-services">
+            <h3>Services</h3>
+            <ul>
+                <li>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>Web Design
+                </li>
+                <li>
+                    <ion-icon name="arrow-forward-outline"></ion-icon> Web Development
+                </li>
+                <li>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>Mern Project
+                </li>
+                <li>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>online classes
+                </li>
+                <li>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>Youtube vedio
+                </li>
+            </ul>
+        </div>
+
+        <div class="ques">
+            <h3>Have a question
+                <ion-icon name="help-outline"></ion-icon>
+            </h3>
+            <div class="address">
+                <ion-icon name="person-add-outline"></ion-icon>Karnal,Haryana
+            </div>
+            <div class="phone">
+                <ion-icon name="call-outline"></ion-icon>+91 9812577979
+            </div>
+            <div class="email">
+                <ion-icon name="mail-unread-outline"></ion-icon> arpitkalra15@gamil.com
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="link-container">
+
+        <div class="footer-profile-links">
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <ion-icon name="logo-github"></ion-icon>
+            <ion-icon name="logo-facebook"></ion-icon>
+        </div>
+
+        <div class="copyright">
+            CopyRights @2022 All Rights reserved | Template is made with help of technical thapp
+        </div>
+    </div>
+</footer>
+
+<script>
+    const CounterNum = document.querySelectorAll(".counter-numbers");
+    const speed = 200;
+    CounterNum.forEach((curElem) => {
+        const updateNumber = () => {
+            const targetNumber = parseInt(curElem.dataset.number);
+            const initialNum = parseInt(curElem.innerText);
+            const incrementNumber = targetNumber / speed;
+            if (initialNum < targetNumber) {
+                curElem.innerText = `${initialNum + incrementNumber}+`;
+                setTimeout(updateNumber, 10);
+            }
+
+        };
+        updateNumber();
+
+    });
+    // navbar scripting tag toggle button used
+
+    const mobilebtn = document.querySelector(".mobile-btn");
+    const headerElm = document.querySelector(".header");
+
+    mobilebtn.addEventListener("click", () => {
+        headerElm.classList.toggle("active");
+    });
+</script>
+
+</body>
+
+<script src="scripts/script.js"></script>
+<script src="scripts/questions.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</html>

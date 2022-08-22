@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <!-- info box -->
+    <div class="info_box">
+
+        <div class="info_tittle">
+            <span>Some Rules of Quiz Are:-</span>
+        </div>
+
+        <div class="info_list">
+            <div class="info">1. You Will Have Only <span>15 Sec per</span> Each Questions</div>
+            <div class="info">2. Once you Select You Can't Reselect </div>
+            <div class="info">3. You can't select one option once time goes off.</div>
+            <div class="info">4. You can't <span>Exit quiz</span> While you're Playing </div>
+            <div class="info">5. You'll get pointson the basis of your correct Answer.</div>
+        </div>
+
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+
+    </div>
+
+    <!-- quix box -->
+
+    <div class="quiz_box">
+        <header>
+            <div class="tittle">Carrer Quiz Application</div>
+            <div class="timer">
+                <div class="time_text">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+        </header>
+
+        <section>
+            <div class="que_text">
+                <!-- <span>What is HTML stand FOR?</span> -->
+            </div>
+            <div class="option_list">
+                <!-- <div class="option">
+                    <span>Hyper Text Mark Up Language </span>
+                    <div class="icon tick">
+                        <ion-icon name="checkmark-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="option">
+                    <span>Hyertext Language</span>
+                    <div class="icon cross">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="option">
+                    <span>Hyertext Markup Page</span>
+                </div>
+                <div class="option">
+                    <span>HyperText Landup Page </span>
+                </div> -->
+            </div>
+        </section>
+
+        <footer>
+            <div class="total_que">
+                <!-- <span>  <p>2</p> of <p>5</p> Questions </span> -->
+            </div>
+            <button class="next_que">Next Que</button>
+        </footer>
+    </div>
+
+
+    <!-- result box start here -->
+
+    <div class="result_box">
+        <div class="icon">
+            <ion-icon name="ribbon-outline"></ion-icon>
+        </div>
+        <div class="complete_text">You're completed the Quiz</div>
+        <div class="score_text">and nice You got <span>2</span> out of <span>5</span></div>
+        <div class="buttons">
+            <button class="replay_quiz">Replay Quiz</button>
+            <button class="quit_quiz">Quit Quiz</button>
+        </div>
+    </div>
+</body>
+
+
+<script src="scripts/script.js"></script>
+<script src="scripts/questions.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</html>
